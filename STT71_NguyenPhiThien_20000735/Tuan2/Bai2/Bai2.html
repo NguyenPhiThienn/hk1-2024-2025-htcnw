@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta cindeharset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url("img/background.png");
+        }
+        a{
+            text-decoration: none;
+        }
+        .header,.nav{
+            display: flex;
+            align-items: center;
+            color: white;
+            width: 100%;
+        }
+        .nav{
+            width:100%;
+            background-color: rgb(184, 180, 180);
+
+        }
+        .nav a{
+            color: white;
+            padding: 5px 20px;
+            font-size: 20px;
+        }
+        .main{
+            background-color: white;
+            display: flex;
+        }
+        section{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 10px 20px;
+            gap: 20px;
+            border-right: 1px solid rgb(184, 180, 180);
+        }
+        section .left{
+            padding: 10px;
+            border: 1px solid rgb(184, 180, 180);
+        }
+        section div span{
+            color: red;
+        }
+        .link{
+            padding: 10px 30px;
+        }
+        .link h3{
+            color: red;
+        }
+        .link div a{
+            display: flex;
+            flex-direction: column;
+            color: red;
+            border-bottom: 1px solid rgb(184, 180, 180);
+            padding: 20px 15px;
+
+        }
+        .link p{
+            padding:15px 0;
+            display: block;
+        }
+           
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="img/logo.png" alt="">
+       <div>
+        <h1>
+            YOKO'S KITCHEN
+        </h1>
+        <h3>
+            JAPANESE COOKING CLASSES
+        </h3>
+       </div>
+    </div>
+    <div class="nav">
+        <a href="" style="color: black;">home</a>
+        <a href="">classes</a>
+        <a href="">catering</a>
+        <a href="">about</a>
+    </div>
+    <div class="main">
+        <div class="page">
+            <section>
+                <div class="left">
+                    <img src="img/teriyaki.jpg" alt="">
+                    <p>Bok Choi</p>
+                </div>
+                <div>
+                    <h3> Japanese Vegetarian
+                    </h3>
+                    <span>                          
+                        Five week course in London
+                    </span>
+                    <p>
+                        A five week introduction to traditional Japanese vegetarian meals, teaching you a selection of rice and noodle dishes.
+
+                    </p>
+
+                </div>
+            </section>
+            <section>
+                <div class="left">
+                    <img src="img/teriyaki.jpg" alt="">
+                    <p>Teriyaki Sauce</p>
+                </div>
+                <div>
+                    <h3> 
+                        Sauces Masterclass                    </h3>
+                    <span>                          
+                        One day workshop
+                    </span>
+                    <p>
+                        An intensive one-day course looking at how to create the most delicious sauces for use in a range of Japanese cookery.
+
+                    </p>
+
+            </section>
+
+        </div>
+        <div class="link">
+            <div>
+                <h3>Popular Pecipes</h3>
+                <a href="">Yakitori (grilled chicken)</a>
+                <a href="">Tsukume (minced chicken paties)</a>
+                <a href="">Okonomiyaki(savory pancakes)</a>
+                <a href="">Mizutaki(chicken stew)</a>
+            </div>
+            <div class="bottom">
+                <h3>Contact</h3>
+                <p>Yoo's Kitchen</p>
+                <p>27 redchurch Stress</p>
+                <p>Shoreditch</p>
+                <p>London E2 7DP</p>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
