@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <style>
+        /* Reset mặc định của danh sách */
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Định dạng cho danh sách có chấm đầu dòng */
+        ul.facilities {
+            list-style: disc;
+            padding-left: 20px;
+        }
+
+        /* Định dạng cho thanh điều hướng */
+        .nav {
+            display: flex;
+            justify-content: left; 
+            background-color: #f3f3f3;
+            padding: 10px;
+        }
+
+        .nav li {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+
+        /* Thêm ký tự '♦' giữa các li */
+        .nav li:not(:last-child)::after {
+            content: " ♦";
+            margin-left: 10px; /* Khoảng cách giữa li và ký tự '♦' */
+        }
+
+        /* Định dạng cho các mục liên kết */
+        .nav li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .nav li a:hover {
+            color: #ff0000; /* Thay đổi màu khi hover */
+        }
+
+        /* Định dạng cho tiêu đề */
+        .h1 h1 {
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        /* Định dạng cho đoạn văn bản mới */
+        .content {
+            margin: 20px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="image/diamond.jpg" alt="Diamond" usemap="#diamondmap" width="548" height="150">
+        <map id="diamondmap" name="diamondmap">
+           <area shape="rect" coords="225,7,333,40" href="class.html" alt="Classes" title="View our classes">
+           <area shape="rect" coords="258,44,437,82" href="member.html" alt="Member Ships" title="View our membership options">
+           <area shape="default" coords="0,0,548,150" href="home.html" alt="Home Page" title="Return to the Home page"> <!-- Liên kết trang home.html -->
+        </map>
+     </div>
+
+     <div class="header">
+        <header>
+            <nav class="nav">
+                <ul>
+                    <li><a href="home.html">Home Page</a></li>
+                    <li><a href="facilities.html">Facilities</a></li>
+                    <li><a href="classes.html">Classes</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                    <li><a href="staff.html">Staff</a></li>
+                    <li><a href="hours.html">Hours</a></li>
+                </ul>
+            </nav>
+            <div class="h1">
+                <h1>Welcome</h1>
+                <div class="content">
+                    <p>At Diamond Health Club, you can stay healthy year-round and have fun doing it! We offer something for everyone. Our state-of-the-art facilities can challenge the most seasoned athlete, while remaining friendly to our first-time users. Be sure to check out our great classes for everyone from children and teens to adults and seniors. No matter who you are, DHC offers a class for you.</p>
+                    
+                    <p>DHC also provides several different membership options. You can register as an individual or a family. We also provide special couples plans. Planning to visit Seattle a few days, weeks, or a month? Our great temporary plans are tailored to meet the needs of any visitor. Temporary memberships also make great Christmas gifts.</p>
+
+                    <h2>Facilities</h2>
+                    <ul class="facilities">
+                        <li>2 workout rooms</li>
+                        <li>Olympic size pool with at least 3 lanes always open</li>
+                        <li>Warm, 3-foot deep therapeutic pool</li>
+                        <li>2 gymnasiums with full size basketball courts</li>
+                        <li>Five exercise rooms for private and class instruction</li>
+                        <li>Climbing gym</li>
+                        <li>3 racquetball courts</li>
+                        <li>On-site child care</li>
+                    </ul>
+
+                    <h2>Hours</h2>
+                    <ul class="hours">
+                        <li>Mon. - Fri. : 5 a.m. to 11 p.m.</li>
+                        <li>Sat. : 7 a.m. to 8 p.m.</li>
+                        <li>Sun. : 8 a.m. to 5 p.m.</li>
+                    </ul>
+
+                    <h2>For More Information, E-mail our Staff</h2>
+                    <ul class="staff">
+                        <li><a href="mailto:tstoven@dmond-health.com">Ty Stoven, General Manager</a></li>
+                        <li><a href="mailto:ydolen@dmond-health.com">Yosef Dolen, Assistant Manager</a></li>
+                        <li><a href="mailto:smyafin@dmond-health.com">Sue Myafin, Child Care</a></li>
+                        <li><a href="mailto:jmichel@dmond-health.com">James Michel, Health Services</a></li>
+                        <li><a href="mailto:rchi@dmond-health.com">Ron Chi, Membership</a></li>
+                        <li><a href="mailto:mlopez@dmond-health.com">Marcia Lopez, Classes</a></li>
+                    </ul>
+                    <hr>
+                    <p>Diamond Health Club ♦ 4317 Alvin Way ♦ Boise, ID 83701 ♦ (208) 555-4398<br>
+                    Your Year-Round Source for Fun Family Health</p>
+                </div>
+            </div>
+        </header>
+     </div>
+</body>
+</html>
